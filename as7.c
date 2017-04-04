@@ -7,7 +7,6 @@
 
 #include <baboon.h>
 
-
 const unsigned int RAND_RANGE = RAND_MAX>>10;
 
 int xingCount = 0;
@@ -16,7 +15,7 @@ int toBWaitCount = 0;
 int toAWaitCount = 0;
 enum {None, DirToB, DirToA} xingDirection;
 xingDirection = None;
-sem_t a, b, mutex; // a is cross to A semaphore, b is to b semaphore
+sem_t a, b, mutex; // a is cross to A semaphore, b is cross to B semaphore
 time_t t;
 char debug = 0;//used to debug
 
@@ -56,6 +55,7 @@ void semsignal(sem_t *sem) {
 
 void *crossToA(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
+	printf("Thread id: %d CrossToA has been called!.\n", data->tid);
 	printf("Thread id: %d CrossToA Waiting on Mutex.\n", data->tid);
 	semwait(&mutex);
 	printf("Thread id: %d CrossToA Passed Mutex.\n", data->tid);
@@ -113,17 +113,27 @@ void *crossToA(void *arg) {
 		printf("Thread id: %d CrossToA signaling a waiting CrossToA.\n", data->tid);
 		semsignal(&a);
 	}
-	else if ()
+	else if (xingCount == 0 && toBWaitCount != 0 &&
+		(toAWaitCount == 0 || xedCount + xingCount >= 10))
 	{
-
+		printf("Thread id: %d CrossToA changing direction to DirToB.\n", data->tid);
+		xingDirection = DirToB;
+		xedCount = 0;
+		printf("Thread id: %d CrossToA signaling a waiting CrossToB.\n", data->tid);
+		semsignal(&b);
 	}
-	else if()
+	else if(xingCount == 0 && toBWaitCount == 0 && toAWaitCount == 0)
 	{
-
+		printf("Thread id: %d CrossToA setting direction to none.\n", data->tid);
+		xingDirection = None;
+		xedCount = 0;
+		printf("Thread id: %d CrossToA Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
 	}
 	else
 	{
-
+		printf("Thread id: %d CrossToA Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
 	}
 
 	fflush(stdout);
@@ -132,8 +142,88 @@ void *crossToA(void *arg) {
 
 void *crossToB(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
+	printf("Thread id: %d CrossToB has been called!.\n", data->tid);
+	printf("Thread id: %d CrossToB Waiting on Mutex.\n", data->tid);
 	semwait(&mutex);
+	printf("Thread id: %d CrossToB Passed Mutex.\n", data->tid);
 
+	if((xingDirection == DirToB || xingDirection == None) && xingCount < 4 &&
+		(xedCount + xingCount < 10 || toAWaitCount == 0) && toBWaitCount == 0)
+	{
+		printf("Thead id: %d CrossToB is crossing now!\n", data->tid);
+		xingDirection = DirToB;
+		xingCount++;
+		printf("Thread id: %d CrossToB Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
+	}
+	else
+	{
+		printf("Thread id: %d CrossToB is waiting.\n", data->tid);
+		toBWaitCount++;
+		printf("Thread id: %d CrosstoB Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
+		semwait(&b);
+		printf("Thread id: %d CrossToB was waiting, now im signaled.\n", data->tid);
+		toBWaitCount--;
+		xingCount++;
+		xingDirection = DirToB;
+
+		// *** Baboons check to see if anyone is waiting behind them, and signal those behind them
+		// *** This is necessary because otherwise only one baboon would be on the rope at a time. Symmetrical with logic in crossToA
+		if(toBWaitCount > 0 && xingCount < 4 && (xedCount + xingCount < 10 || toAWaitCount == 0))
+		{
+			printf("Thread id: %d CrossToB is going to cross.\n", data->tid);
+			printf("Thread id: %d CrossToB Signalling thread behind me.\n", data->tid);
+			semsignal(&b);
+		}
+		else
+		{
+			printf("Thread id: %d CrossToB is going to cross.\n", data->tid);
+			printf("Thread id: %d CrossToB Signaling Mutex.\n", data->tid);
+			semsignal(&mutex);
+		}
+	}
+
+	printf("Thread id: %d CrossToB is crossing the rope.\n", data->tid);
+	// Time to cross rope
+	stall(CROSS_ROPE_STALL_TIME);
+
+	printf("Thread id: %d CrossToB crossed- Waiting for Mutex.\n", data->tid);
+	semwait(&mutex)
+	printf("Thread id: %d CrossToB Passed Mutex.\n", data->pid);
+	xedCount++;
+	xingCount--;
+
+	if(toBWaitCount != 0 && (xingCount + xedCount < 10 || toAWaitCount == 0))
+	{
+		printf("Thread id: %d CrossToB signaling a waiting CrossToA.\n", data->tid);
+		semsignal(&b);
+	}
+	else if (xingCount == 0 && toAWaitCount != 0 &&
+		(toBWaitCount == 0 || xedCount + xingCount >= 10))
+	{
+		printf("Thread id: %d CrossToB changing direction to DirToA.\n", data->tid);
+		xingDirection = DirToA;
+		xedCount = 0;
+		printf("Thread id: %d CrossToB signaling a waiting CrossToA.\n", data->tid);
+		semsignal(&a);
+	}
+	else if(xingCount == 0 && toBWaitCount == 0 && toAWaitCount == 0)
+	{
+		printf("Thread id: %d CrossToB setting direction to none.\n", data->tid);
+		xingDirection = None;
+		xedCount = 0;
+		printf("Thread id: %d CrossToB Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
+	}
+	else
+	{
+		printf("Thread id: %d CrossToB Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
+	}
+
+
+	fflush(stdout);
 	pthread_exit(NULL);
 }
 

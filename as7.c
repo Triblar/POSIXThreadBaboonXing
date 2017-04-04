@@ -42,7 +42,7 @@ typedef enum {None, DirToB, DirToA} crossDirection;
 crossDirection xingDirection = None;
 sem_t a, b, mutex; // a is cross to A semaphore, b is cross to B semaphore
 time_t t;
-char debug = 1;//used to debug
+char debug = 0;//used to debug
 
 int getRand();//returns a random int
 void *crossToA(void *arg);//thread function for crossing to A
@@ -322,6 +322,8 @@ int main(int argc, char const *argv[])
         {
             pthread_join(threads[j], NULL);
         }
+
+        printf("Baboons have crossed without killing each other. Great Success!\n");
 	    return EXIT_SUCCESS;
     }
 

@@ -1,1 +1,11 @@
 A POSIX Thread based solution to the Baboon Crossing Problem in Concurrent Programming
+
+To run the program, call ./as7.o from the current working directory followed by a case insensitive string of a's or b's to inidcate a baboon that wants to cross to a or b
+
+An example output from a run is included in output.txt
+
+Example run:
+
+./as7.o aaaaaaabbbababaaabbbbbababaaaaabaabbbbaabababababbbbabab
+
+

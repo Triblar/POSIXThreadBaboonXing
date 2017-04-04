@@ -1,0 +1,884 @@
+Thread id: 5 CrossToB has been called!.
+Thread id: 5 CrossToB Waiting on Mutex.
+Thread id: 5 CrossToB Passed Mutex.
+Thead id: 5 CrossToB is crossing now!
+Thread id: 5 CrossToB Signaling Mutex.
+Thread id: 5 CrossToB is crossing the rope.
+Thread id: 5 CrossToB crossed- Waiting for Mutex.
+Thread id: 5 CrossToB Passed Mutex.
+Thread id: 5 CrossToB setting direction to none.
+Thread id: 5 CrossToB Signaling Mutex.
+Thread id: 4 CrossToB has been called!.
+Thread id: 4 CrossToB Waiting on Mutex.
+Thread id: 4 CrossToB Passed Mutex.
+Thead id: 4 CrossToB is crossing now!
+Thread id: 6 CrossToA has been called!.
+Thread id: 4 CrossToB Signaling Mutex.
+Thread id: 6 CrossToA Waiting on Mutex.
+Thread id: 4 CrossToB is crossing the rope.
+Thread id: 6 CrossToA Passed Mutex.
+Thread id: 6 CrossToA is waiting.
+Thread id: 6 CrosstoA Signaling Mutex.
+Thread id: 7 CrossToB has been called!.
+Thread id: 7 CrossToB Waiting on Mutex.
+Thread id: 7 CrossToB Passed Mutex.
+Thead id: 7 CrossToB is crossing now!
+Thread id: 7 CrossToB Signaling Mutex.
+Thread id: 7 CrossToB is crossing the rope.
+Thread id: 4 CrossToB crossed- Waiting for Mutex.
+Thread id: 4 CrossToB Passed Mutex.
+Thread id: 4 CrossToB Signaling Mutex.
+Thread id: 7 CrossToB crossed- Waiting for Mutex.
+Thread id: 7 CrossToB Passed Mutex.
+Thread id: 7 CrossToB changing direction to DirToA.
+Thread id: 7 CrossToB signaling a waiting CrossToA.
+Thread id: 6 CrossToA was waiting, now im signaled.
+Thread id: 6 CrossToA is going to cross.
+Thread id: 6 CrossToA Signaling Mutex.
+Thread id: 6 CrossToA is crossing the rope.
+Thread id: 2 CrossToB has been called!.
+Thread id: 2 CrossToB Waiting on Mutex.
+Thread id: 2 CrossToB Passed Mutex.
+Thread id: 2 CrossToB is waiting.
+Thread id: 2 CrosstoB Signaling Mutex.
+Thread id: 3 CrossToA has been called!.
+Thread id: 3 CrossToA Waiting on Mutex.
+Thread id: 3 CrossToA Passed Mutex.
+Thead id: 3 CrossToA is crossing now!
+Thread id: 3 CrossToA Signaling Mutex.
+Thread id: 3 CrossToA is crossing the rope.
+Thread id: 6 CrossToA crossed- Waiting for Mutex.
+Thread id: 6 CrossToA Passed Mutex.
+Thread id: 6 CrossToA Signaling Mutex.
+Thread id: 8 CrossToA has been called!.
+Thread id: 8 CrossToA Waiting on Mutex.
+Thread id: 8 CrossToA Passed Mutex.
+Thead id: 8 CrossToA is crossing now!
+Thread id: 8 CrossToA Signaling Mutex.
+Thread id: 8 CrossToA is crossing the rope.
+Thread id: 3 CrossToA crossed- Waiting for Mutex.
+Thread id: 3 CrossToA Passed Mutex.
+Thread id: 3 CrossToA Signaling Mutex.
+Thread id: 1 CrossToA has been called!.
+Thread id: 1 CrossToA Waiting on Mutex.
+Thread id: 1 CrossToA Passed Mutex.
+Thead id: 1 CrossToA is crossing now!
+Thread id: 1 CrossToA Signaling Mutex.
+Thread id: 1 CrossToA is crossing the rope.
+Thread id: 8 CrossToA crossed- Waiting for Mutex.
+Thread id: 8 CrossToA Passed Mutex.
+Thread id: 8 CrossToA Signaling Mutex.
+Thread id: 9 CrossToB has been called!.
+Thread id: 9 CrossToB Waiting on Mutex.
+Thread id: 9 CrossToB Passed Mutex.
+Thread id: 9 CrossToB is waiting.
+Thread id: 9 CrosstoB Signaling Mutex.
+Thread id: 10 CrossToA has been called!.
+Thread id: 10 CrossToA Waiting on Mutex.
+Thread id: 10 CrossToA Passed Mutex.
+Thead id: 10 CrossToA is crossing now!
+Thread id: 10 CrossToA Signaling Mutex.
+Thread id: 10 CrossToA is crossing the rope.
+Thread id: 1 CrossToA crossed- Waiting for Mutex.
+Thread id: 1 CrossToA Passed Mutex.
+Thread id: 1 CrossToA Signaling Mutex.
+Thread id: 0 CrossToA has been called!.
+Thread id: 0 CrossToA Waiting on Mutex.
+Thread id: 0 CrossToA Passed Mutex.
+Thead id: 0 CrossToA is crossing now!
+Thread id: 0 CrossToA Signaling Mutex.
+Thread id: 0 CrossToA is crossing the rope.
+Thread id: 10 CrossToA crossed- Waiting for Mutex.
+Thread id: 10 CrossToA Passed Mutex.
+Thread id: 10 CrossToA Signaling Mutex.
+Thread id: 11 CrossToA has been called!.
+Thread id: 11 CrossToA Waiting on Mutex.
+Thread id: 11 CrossToA Passed Mutex.
+Thead id: 11 CrossToA is crossing now!
+Thread id: 11 CrossToA Signaling Mutex.
+Thread id: 11 CrossToA is crossing the rope.
+Thread id: 11 CrossToA crossed- Waiting for Mutex.
+Thread id: 11 CrossToA Passed Mutex.
+Thread id: 11 CrossToA Signaling Mutex.
+Thread id: 12 CrossToB has been called!.
+Thread id: 12 CrossToB Waiting on Mutex.
+Thread id: 12 CrossToB Passed Mutex.
+Thread id: 12 CrossToB is waiting.
+Thread id: 12 CrosstoB Signaling Mutex.
+Thread id: 13 CrossToB has been called!.
+Thread id: 13 CrossToB Waiting on Mutex.
+Thread id: 13 CrossToB Passed Mutex.
+Thread id: 13 CrossToB is waiting.
+Thread id: 13 CrosstoB Signaling Mutex.
+Thread id: 14 CrossToB has been called!.
+Thread id: 14 CrossToB Waiting on Mutex.
+Thread id: 14 CrossToB Passed Mutex.
+Thread id: 14 CrossToB is waiting.
+Thread id: 14 CrosstoB Signaling Mutex.
+Thread id: 15 CrossToB has been called!.
+Thread id: 15 CrossToB Waiting on Mutex.
+Thread id: 15 CrossToB Passed Mutex.
+Thread id: 15 CrossToB is waiting.
+Thread id: 15 CrosstoB Signaling Mutex.
+Thread id: 16 CrossToB has been called!.
+Thread id: 16 CrossToB Waiting on Mutex.
+Thread id: 16 CrossToB Passed Mutex.
+Thread id: 16 CrossToB is waiting.
+Thread id: 16 CrosstoB Signaling Mutex.
+Thread id: 17 CrossToB has been called!.
+Thread id: 17 CrossToB Waiting on Mutex.
+Thread id: 17 CrossToB Passed Mutex.
+Thread id: 17 CrossToB is waiting.
+Thread id: 17 CrosstoB Signaling Mutex.
+Thread id: 22 CrossToB has been called!.
+Thread id: 22 CrossToB Waiting on Mutex.
+Thread id: 22 CrossToB Passed Mutex.
+Thread id: 22 CrossToB is waiting.
+Thread id: 22 CrosstoB Signaling Mutex.
+Thread id: 21 CrossToB has been called!.
+Thread id: 21 CrossToB Waiting on Mutex.
+Thread id: 21 CrossToB Passed Mutex.
+Thread id: 21 CrossToB is waiting.
+Thread id: 21 CrosstoB Signaling Mutex.
+Thread id: 20 CrossToB has been called!.
+Thread id: 20 CrossToB Waiting on Mutex.
+Thread id: 20 CrossToB Passed Mutex.
+Thread id: 20 CrossToB is waiting.
+Thread id: 20 CrosstoB Signaling Mutex.
+Thread id: 19 CrossToB has been called!.
+Thread id: 19 CrossToB Waiting on Mutex.
+Thread id: 19 CrossToB Passed Mutex.
+Thread id: 19 CrossToB is waiting.
+Thread id: 19 CrosstoB Signaling Mutex.
+Thread id: 24 CrossToB has been called!.
+Thread id: 24 CrossToB Waiting on Mutex.
+Thread id: 24 CrossToB Passed Mutex.
+Thread id: 24 CrossToB is waiting.
+Thread id: 24 CrosstoB Signaling Mutex.
+Thread id: 23 CrossToB has been called!.
+Thread id: 23 CrossToB Waiting on Mutex.
+Thread id: 23 CrossToB Passed Mutex.
+Thread id: 23 CrossToB is waiting.
+Thread id: 23 CrosstoB Signaling Mutex.
+Thread id: 25 CrossToB has been called!.
+Thread id: 25 CrossToB Waiting on Mutex.
+Thread id: 25 CrossToB Passed Mutex.
+Thread id: 25 CrossToB is waiting.
+Thread id: 25 CrosstoB Signaling Mutex.
+Thread id: 0 CrossToA crossed- Waiting for Mutex.
+Thread id: 0 CrossToA Passed Mutex.
+Thread id: 0 CrossToA changing direction to DirToB.
+Thread id: 0 CrossToA signaling a waiting CrossToB.
+Thread id: 18 CrossToB has been called!.
+Thread id: 18 CrossToB Waiting on Mutex.
+Thread id: 26 CrossToB has been called!.
+Thread id: 26 CrossToB Waiting on Mutex.
+Thread id: 27 CrossToB has been called!.
+Thread id: 27 CrossToB Waiting on Mutex.
+Thread id: 28 CrossToA has been called!.
+Thread id: 28 CrossToA Waiting on Mutex.
+Thread id: 29 CrossToA has been called!.
+Thread id: 29 CrossToA Waiting on Mutex.
+Thread id: 2 CrossToB was waiting, now im signaled.
+Thread id: 2 CrossToB is going to cross.
+Thread id: 2 CrossToB Signalling thread behind me.
+Thread id: 9 CrossToB was waiting, now im signaled.
+Thread id: 9 CrossToB is going to cross.
+Thread id: 9 CrossToB Signalling thread behind me.
+Thread id: 9 CrossToB is crossing the rope.
+Thread id: 9 CrossToB crossed- Waiting for Mutex.
+Thread id: 12 CrossToB was waiting, now im signaled.
+Thread id: 12 CrossToB is going to cross.
+Thread id: 12 CrossToB Signalling thread behind me.
+Thread id: 12 CrossToB is crossing the rope.
+Thread id: 12 CrossToB crossed- Waiting for Mutex.
+Thread id: 13 CrossToB was waiting, now im signaled.
+Thread id: 13 CrossToB is going to cross.
+Thread id: 13 CrossToB Signaling Mutex.
+Thread id: 13 CrossToB is crossing the rope.
+Thread id: 13 CrossToB crossed- Waiting for Mutex.
+Thread id: 13 CrossToB Passed Mutex.
+Thread id: 13 CrossToB signaling a waiting CrossToA.
+Thread id: 14 CrossToB was waiting, now im signaled.
+Thread id: 14 CrossToB is going to cross.
+Thread id: 14 CrossToB Signaling Mutex.
+Thread id: 14 CrossToB is crossing the rope.
+Thread id: 14 CrossToB crossed- Waiting for Mutex.
+Thread id: 14 CrossToB Passed Mutex.
+Thread id: 14 CrossToB signaling a waiting CrossToA.
+Thread id: 15 CrossToB was waiting, now im signaled.
+Thread id: 15 CrossToB is going to cross.
+Thread id: 15 CrossToB Signaling Mutex.
+Thread id: 15 CrossToB is crossing the rope.
+Thread id: 15 CrossToB crossed- Waiting for Mutex.
+Thread id: 15 CrossToB Passed Mutex.
+Thread id: 15 CrossToB signaling a waiting CrossToA.
+Thread id: 16 CrossToB was waiting, now im signaled.
+Thread id: 16 CrossToB is going to cross.
+Thread id: 16 CrossToB Signaling Mutex.
+Thread id: 16 CrossToB is crossing the rope.
+Thread id: 74 CrossToB has been called!.
+Thread id: 74 CrossToB Waiting on Mutex.
+Thread id: 74 CrossToB Passed Mutex.
+Thread id: 74 CrossToB is waiting.
+Thread id: 74 CrosstoB Signaling Mutex.
+Thread id: 73 CrossToB has been called!.
+Thread id: 73 CrossToB Waiting on Mutex.
+Thread id: 73 CrossToB Passed Mutex.
+Thread id: 73 CrossToB is waiting.
+Thread id: 73 CrosstoB Signaling Mutex.
+Thread id: 72 CrossToB has been called!.
+Thread id: 72 CrossToB Waiting on Mutex.
+Thread id: 72 CrossToB Passed Mutex.
+Thread id: 72 CrossToB is waiting.
+Thread id: 72 CrosstoB Signaling Mutex.
+Thread id: 71 CrossToA has been called!.
+Thread id: 71 CrossToA Waiting on Mutex.
+Thread id: 71 CrossToA Passed Mutex.
+Thread id: 71 CrossToA is waiting.
+Thread id: 71 CrosstoA Signaling Mutex.
+Thread id: 70 CrossToB has been called!.
+Thread id: 70 CrossToB Waiting on Mutex.
+Thread id: 70 CrossToB Passed Mutex.
+Thread id: 70 CrossToB is waiting.
+Thread id: 70 CrosstoB Signaling Mutex.
+Thread id: 69 CrossToA has been called!.
+Thread id: 69 CrossToA Waiting on Mutex.
+Thread id: 69 CrossToA Passed Mutex.
+Thread id: 69 CrossToA is waiting.
+Thread id: 69 CrosstoA Signaling Mutex.
+Thread id: 26 CrossToB Passed Mutex.
+Thread id: 26 CrossToB is waiting.
+Thread id: 26 CrosstoB Signaling Mutex.
+Thread id: 18 CrossToB Passed Mutex.
+Thread id: 18 CrossToB is waiting.
+Thread id: 18 CrosstoB Signaling Mutex.
+Thread id: 12 CrossToB Passed Mutex.
+Thread id: 12 CrossToB signaling a waiting CrossToA.
+Thread id: 45 CrossToB has been called!.
+Thread id: 45 CrossToB Waiting on Mutex.
+Thread id: 46 CrossToA has been called!.
+Thread id: 46 CrossToA Waiting on Mutex.
+Thread id: 47 CrossToB has been called!.
+Thread id: 47 CrossToB Waiting on Mutex.
+Thread id: 48 CrossToA has been called!.
+Thread id: 48 CrossToA Waiting on Mutex.
+Thread id: 49 CrossToB has been called!.
+Thread id: 49 CrossToB Waiting on Mutex.
+Thread id: 50 CrossToA has been called!.
+Thread id: 50 CrossToA Waiting on Mutex.
+Thread id: 51 CrossToB has been called!.
+Thread id: 51 CrossToB Waiting on Mutex.
+Thread id: 52 CrossToA has been called!.
+Thread id: 52 CrossToA Waiting on Mutex.
+Thread id: 53 CrossToA has been called!.
+Thread id: 53 CrossToA Waiting on Mutex.
+Thread id: 54 CrossToA has been called!.
+Thread id: 54 CrossToA Waiting on Mutex.
+Thread id: 55 CrossToA has been called!.
+Thread id: 55 CrossToA Waiting on Mutex.
+Thread id: 56 CrossToB has been called!.
+Thread id: 56 CrossToB Waiting on Mutex.
+Thread id: 57 CrossToB has been called!.
+Thread id: 57 CrossToB Waiting on Mutex.
+Thread id: 58 CrossToA has been called!.
+Thread id: 58 CrossToA Waiting on Mutex.
+Thread id: 59 CrossToB has been called!.
+Thread id: 59 CrossToB Waiting on Mutex.
+Thread id: 60 CrossToA has been called!.
+Thread id: 60 CrossToA Waiting on Mutex.
+Thread id: 61 CrossToB has been called!.
+Thread id: 61 CrossToB Waiting on Mutex.
+Thread id: 62 CrossToA has been called!.
+Thread id: 62 CrossToA Waiting on Mutex.
+Thread id: 63 CrossToA has been called!.
+Thread id: 63 CrossToA Waiting on Mutex.
+Thread id: 64 CrossToA has been called!.
+Thread id: 64 CrossToA Waiting on Mutex.
+Thread id: 65 CrossToB has been called!.
+Thread id: 65 CrossToB Waiting on Mutex.
+Thread id: 66 CrossToB has been called!.
+Thread id: 66 CrossToB Waiting on Mutex.
+Thread id: 67 CrossToB has been called!.
+Thread id: 67 CrossToB Waiting on Mutex.
+Thread id: 68 CrossToB has been called!.
+Thread id: 68 CrossToB Waiting on Mutex.
+Thread id: 17 CrossToB was waiting, now im signaled.
+Thread id: 17 CrossToB is going to cross.
+Thread id: 17 CrossToB Signaling Mutex.
+Thread id: 17 CrossToB is crossing the rope.
+Thread id: 16 CrossToB crossed- Waiting for Mutex.
+Thread id: 16 CrossToB Passed Mutex.
+Thread id: 16 CrossToB signaling a waiting CrossToA.
+Thread id: 22 CrossToB was waiting, now im signaled.
+Thread id: 22 CrossToB is going to cross.
+Thread id: 22 CrossToB Signaling Mutex.
+Thread id: 22 CrossToB is crossing the rope.
+Thread id: 17 CrossToB crossed- Waiting for Mutex.
+Thread id: 17 CrossToB Passed Mutex.
+Thread id: 17 CrossToB signaling a waiting CrossToA.
+Thread id: 30 CrossToA has been called!.
+Thread id: 30 CrossToA Waiting on Mutex.
+Thread id: 31 CrossToA has been called!.
+Thread id: 31 CrossToA Waiting on Mutex.
+Thread id: 32 CrossToB has been called!.
+Thread id: 32 CrossToB Waiting on Mutex.
+Thread id: 33 CrossToA has been called!.
+Thread id: 33 CrossToA Waiting on Mutex.
+Thread id: 34 CrossToA has been called!.
+Thread id: 34 CrossToA Waiting on Mutex.
+Thread id: 35 CrossToB has been called!.
+Thread id: 35 CrossToB Waiting on Mutex.
+Thread id: 36 CrossToA has been called!.
+Thread id: 36 CrossToA Waiting on Mutex.
+Thread id: 37 CrossToA has been called!.
+Thread id: 37 CrossToA Waiting on Mutex.
+Thread id: 38 CrossToA has been called!.
+Thread id: 38 CrossToA Waiting on Mutex.
+Thread id: 39 CrossToA has been called!.
+Thread id: 22 CrossToB crossed- Waiting for Mutex.
+Thread id: 39 CrossToA Waiting on Mutex.
+Thread id: 21 CrossToB was waiting, now im signaled.
+Thread id: 21 CrossToB is going to cross.
+Thread id: 21 CrossToB Signaling Mutex.
+Thread id: 40 CrossToA has been called!.
+Thread id: 40 CrossToA Waiting on Mutex.
+Thread id: 40 CrossToA Passed Mutex.
+Thread id: 40 CrossToA is waiting.
+Thread id: 40 CrosstoA Signaling Mutex.
+Thread id: 21 CrossToB is crossing the rope.
+Thread id: 28 CrossToA Passed Mutex.
+Thread id: 28 CrossToA is waiting.
+Thread id: 28 CrosstoA Signaling Mutex.
+Thread id: 29 CrossToA Passed Mutex.
+Thread id: 29 CrossToA is waiting.
+Thread id: 29 CrosstoA Signaling Mutex.
+Thread id: 45 CrossToB Passed Mutex.
+Thread id: 45 CrossToB is waiting.
+Thread id: 45 CrosstoB Signaling Mutex.
+Thread id: 46 CrossToA Passed Mutex.
+Thread id: 46 CrossToA is waiting.
+Thread id: 46 CrosstoA Signaling Mutex.
+Thread id: 47 CrossToB Passed Mutex.
+Thread id: 47 CrossToB is waiting.
+Thread id: 47 CrosstoB Signaling Mutex.
+Thread id: 48 CrossToA Passed Mutex.
+Thread id: 48 CrossToA is waiting.
+Thread id: 48 CrosstoA Signaling Mutex.
+Thread id: 49 CrossToB Passed Mutex.
+Thread id: 49 CrossToB is waiting.
+Thread id: 49 CrosstoB Signaling Mutex.
+Thread id: 50 CrossToA Passed Mutex.
+Thread id: 50 CrossToA is waiting.
+Thread id: 50 CrosstoA Signaling Mutex.
+Thread id: 51 CrossToB Passed Mutex.
+Thread id: 51 CrossToB is waiting.
+Thread id: 51 CrosstoB Signaling Mutex.
+Thread id: 52 CrossToA Passed Mutex.
+Thread id: 52 CrossToA is waiting.
+Thread id: 52 CrosstoA Signaling Mutex.
+Thread id: 53 CrossToA Passed Mutex.
+Thread id: 53 CrossToA is waiting.
+Thread id: 53 CrosstoA Signaling Mutex.
+Thread id: 54 CrossToA Passed Mutex.
+Thread id: 54 CrossToA is waiting.
+Thread id: 54 CrosstoA Signaling Mutex.
+Thread id: 55 CrossToA Passed Mutex.
+Thread id: 55 CrossToA is waiting.
+Thread id: 55 CrosstoA Signaling Mutex.
+Thread id: 56 CrossToB Passed Mutex.
+Thread id: 56 CrossToB is waiting.
+Thread id: 56 CrosstoB Signaling Mutex.
+Thread id: 57 CrossToB Passed Mutex.
+Thread id: 57 CrossToB is waiting.
+Thread id: 57 CrosstoB Signaling Mutex.
+Thread id: 58 CrossToA Passed Mutex.
+Thread id: 58 CrossToA is waiting.
+Thread id: 58 CrosstoA Signaling Mutex.
+Thread id: 59 CrossToB Passed Mutex.
+Thread id: 59 CrossToB is waiting.
+Thread id: 59 CrosstoB Signaling Mutex.
+Thread id: 60 CrossToA Passed Mutex.
+Thread id: 60 CrossToA is waiting.
+Thread id: 60 CrosstoA Signaling Mutex.
+Thread id: 61 CrossToB Passed Mutex.
+Thread id: 61 CrossToB is waiting.
+Thread id: 61 CrosstoB Signaling Mutex.
+Thread id: 62 CrossToA Passed Mutex.
+Thread id: 62 CrossToA is waiting.
+Thread id: 62 CrosstoA Signaling Mutex.
+Thread id: 63 CrossToA Passed Mutex.
+Thread id: 63 CrossToA is waiting.
+Thread id: 63 CrosstoA Signaling Mutex.
+Thread id: 64 CrossToA Passed Mutex.
+Thread id: 64 CrossToA is waiting.
+Thread id: 64 CrosstoA Signaling Mutex.
+Thread id: 65 CrossToB Passed Mutex.
+Thread id: 65 CrossToB is waiting.
+Thread id: 65 CrosstoB Signaling Mutex.
+Thread id: 66 CrossToB Passed Mutex.
+Thread id: 66 CrossToB is waiting.
+Thread id: 66 CrosstoB Signaling Mutex.
+Thread id: 67 CrossToB Passed Mutex.
+Thread id: 67 CrossToB is waiting.
+Thread id: 67 CrosstoB Signaling Mutex.
+Thread id: 9 CrossToB Passed Mutex.
+Thread id: 9 CrossToB Signaling Mutex.
+Thread id: 27 CrossToB Passed Mutex.
+Thread id: 27 CrossToB is waiting.
+Thread id: 27 CrosstoB Signaling Mutex.
+Thread id: 68 CrossToB Passed Mutex.
+Thread id: 68 CrossToB is waiting.
+Thread id: 68 CrosstoB Signaling Mutex.
+Thread id: 30 CrossToA Passed Mutex.
+Thread id: 30 CrossToA is waiting.
+Thread id: 30 CrosstoA Signaling Mutex.
+Thread id: 31 CrossToA Passed Mutex.
+Thread id: 31 CrossToA is waiting.
+Thread id: 31 CrosstoA Signaling Mutex.
+Thread id: 32 CrossToB Passed Mutex.
+Thread id: 32 CrossToB is waiting.
+Thread id: 32 CrosstoB Signaling Mutex.
+Thread id: 33 CrossToA Passed Mutex.
+Thread id: 33 CrossToA is waiting.
+Thread id: 33 CrosstoA Signaling Mutex.
+Thread id: 34 CrossToA Passed Mutex.
+Thread id: 34 CrossToA is waiting.
+Thread id: 34 CrosstoA Signaling Mutex.
+Thread id: 35 CrossToB Passed Mutex.
+Thread id: 35 CrossToB is waiting.
+Thread id: 35 CrosstoB Signaling Mutex.
+Thread id: 41 CrossToA has been called!.
+Thread id: 41 CrossToA Waiting on Mutex.
+Thread id: 41 CrossToA Passed Mutex.
+Thread id: 41 CrossToA is waiting.
+Thread id: 41 CrosstoA Signaling Mutex.
+Thread id: 36 CrossToA Passed Mutex.
+Thread id: 36 CrossToA is waiting.
+Thread id: 36 CrosstoA Signaling Mutex.
+Thread id: 42 CrossToA has been called!.
+Thread id: 42 CrossToA Waiting on Mutex.
+Thread id: 42 CrossToA Passed Mutex.
+Thread id: 42 CrossToA is waiting.
+Thread id: 42 CrosstoA Signaling Mutex.
+Thread id: 37 CrossToA Passed Mutex.
+Thread id: 37 CrossToA is waiting.
+Thread id: 37 CrosstoA Signaling Mutex.
+Thread id: 43 CrossToA has been called!.
+Thread id: 43 CrossToA Waiting on Mutex.
+Thread id: 43 CrossToA Passed Mutex.
+Thread id: 43 CrossToA is waiting.
+Thread id: 43 CrosstoA Signaling Mutex.
+Thread id: 38 CrossToA Passed Mutex.
+Thread id: 38 CrossToA is waiting.
+Thread id: 38 CrosstoA Signaling Mutex.
+Thread id: 44 CrossToA has been called!.
+Thread id: 44 CrossToA Waiting on Mutex.
+Thread id: 44 CrossToA Passed Mutex.
+Thread id: 44 CrossToA is waiting.
+Thread id: 44 CrosstoA Signaling Mutex.
+Thread id: 39 CrossToA Passed Mutex.
+Thread id: 39 CrossToA is waiting.
+Thread id: 39 CrosstoA Signaling Mutex.
+Thread id: 2 CrossToB is crossing the rope.
+Thread id: 21 CrossToB crossed- Waiting for Mutex.
+Thread id: 21 CrossToB Passed Mutex.
+Thread id: 21 CrossToB Signaling Mutex.
+Thread id: 22 CrossToB Passed Mutex.
+Thread id: 22 CrossToB Signaling Mutex.
+Thread id: 2 CrossToB crossed- Waiting for Mutex.
+Thread id: 2 CrossToB Passed Mutex.
+Thread id: 2 CrossToB changing direction to DirToA.
+Thread id: 2 CrossToB signaling a waiting CrossToA.
+Thread id: 71 CrossToA was waiting, now im signaled.
+Thread id: 71 CrossToA is going to cross.
+Thread id: 71 CrossToA Signalling thread behind me.
+Thread id: 71 CrossToA is crossing the rope.
+Thread id: 71 CrossToA crossed- Waiting for Mutex.
+Thread id: 69 CrossToA was waiting, now im signaled.
+Thread id: 69 CrossToA is going to cross.
+Thread id: 69 CrossToA Signalling thread behind me.
+Thread id: 69 CrossToA is crossing the rope.
+Thread id: 69 CrossToA crossed- Waiting for Mutex.
+Thread id: 28 CrossToA was waiting, now im signaled.
+Thread id: 28 CrossToA is going to cross.
+Thread id: 28 CrossToA Signalling thread behind me.
+Thread id: 28 CrossToA is crossing the rope.
+Thread id: 28 CrossToA crossed- Waiting for Mutex.
+Thread id: 29 CrossToA was waiting, now im signaled.
+Thread id: 29 CrossToA is going to cross.
+Thread id: 29 CrossToA Signaling Mutex.
+Thread id: 29 CrossToA is crossing the rope.
+Thread id: 29 CrossToA crossed- Waiting for Mutex.
+Thread id: 29 CrossToA Passed Mutex.
+Thread id: 29 CrossToA signaling a waiting CrossToA.
+Thread id: 46 CrossToA was waiting, now im signaled.
+Thread id: 46 CrossToA is going to cross.
+Thread id: 46 CrossToA Signaling Mutex.
+Thread id: 46 CrossToA is crossing the rope.
+Thread id: 46 CrossToA crossed- Waiting for Mutex.
+Thread id: 46 CrossToA Passed Mutex.
+Thread id: 46 CrossToA signaling a waiting CrossToA.
+Thread id: 48 CrossToA was waiting, now im signaled.
+Thread id: 48 CrossToA is going to cross.
+Thread id: 48 CrossToA Signaling Mutex.
+Thread id: 48 CrossToA is crossing the rope.
+Thread id: 48 CrossToA crossed- Waiting for Mutex.
+Thread id: 48 CrossToA Passed Mutex.
+Thread id: 48 CrossToA signaling a waiting CrossToA.
+Thread id: 50 CrossToA was waiting, now im signaled.
+Thread id: 50 CrossToA is going to cross.
+Thread id: 50 CrossToA Signaling Mutex.
+Thread id: 50 CrossToA is crossing the rope.
+Thread id: 50 CrossToA crossed- Waiting for Mutex.
+Thread id: 50 CrossToA Passed Mutex.
+Thread id: 50 CrossToA signaling a waiting CrossToA.
+Thread id: 52 CrossToA was waiting, now im signaled.
+Thread id: 52 CrossToA is going to cross.
+Thread id: 52 CrossToA Signaling Mutex.
+Thread id: 52 CrossToA is crossing the rope.
+Thread id: 52 CrossToA crossed- Waiting for Mutex.
+Thread id: 52 CrossToA Passed Mutex.
+Thread id: 52 CrossToA signaling a waiting CrossToA.
+Thread id: 53 CrossToA was waiting, now im signaled.
+Thread id: 53 CrossToA is going to cross.
+Thread id: 53 CrossToA Signaling Mutex.
+Thread id: 53 CrossToA is crossing the rope.
+Thread id: 53 CrossToA crossed- Waiting for Mutex.
+Thread id: 53 CrossToA Passed Mutex.
+Thread id: 53 CrossToA signaling a waiting CrossToA.
+Thread id: 54 CrossToA was waiting, now im signaled.
+Thread id: 54 CrossToA is going to cross.
+Thread id: 54 CrossToA Signaling Mutex.
+Thread id: 54 CrossToA is crossing the rope.
+Thread id: 69 CrossToA Passed Mutex.
+Thread id: 69 CrossToA Signaling Mutex.
+Thread id: 71 CrossToA Passed Mutex.
+Thread id: 71 CrossToA Signaling Mutex.
+Thread id: 28 CrossToA Passed Mutex.
+Thread id: 28 CrossToA Signaling Mutex.
+Thread id: 54 CrossToA crossed- Waiting for Mutex.
+Thread id: 54 CrossToA Passed Mutex.
+Thread id: 54 CrossToA changing direction to DirToB.
+Thread id: 54 CrossToA signaling a waiting CrossToB.
+Thread id: 20 CrossToB was waiting, now im signaled.
+Thread id: 20 CrossToB is going to cross.
+Thread id: 20 CrossToB Signalling thread behind me.
+Thread id: 20 CrossToB is crossing the rope.
+Thread id: 19 CrossToB was waiting, now im signaled.
+Thread id: 19 CrossToB is going to cross.
+Thread id: 19 CrossToB Signalling thread behind me.
+Thread id: 19 CrossToB is crossing the rope.
+Thread id: 20 CrossToB crossed- Waiting for Mutex.
+Thread id: 24 CrossToB was waiting, now im signaled.
+Thread id: 24 CrossToB is going to cross.
+Thread id: 24 CrossToB Signalling thread behind me.
+Thread id: 24 CrossToB is crossing the rope.
+Thread id: 19 CrossToB crossed- Waiting for Mutex.
+Thread id: 23 CrossToB was waiting, now im signaled.
+Thread id: 23 CrossToB is going to cross.
+Thread id: 23 CrossToB Signaling Mutex.
+Thread id: 23 CrossToB is crossing the rope.
+Thread id: 23 CrossToB crossed- Waiting for Mutex.
+Thread id: 23 CrossToB Passed Mutex.
+Thread id: 23 CrossToB signaling a waiting CrossToA.
+Thread id: 24 CrossToB crossed- Waiting for Mutex.
+Thread id: 25 CrossToB was waiting, now im signaled.
+Thread id: 25 CrossToB is going to cross.
+Thread id: 25 CrossToB Signaling Mutex.
+Thread id: 25 CrossToB is crossing the rope.
+Thread id: 19 CrossToB Passed Mutex.
+Thread id: 19 CrossToB signaling a waiting CrossToA.
+Thread id: 74 CrossToB was waiting, now im signaled.
+Thread id: 74 CrossToB is going to cross.
+Thread id: 74 CrossToB Signaling Mutex.
+Thread id: 74 CrossToB is crossing the rope.
+Thread id: 25 CrossToB crossed- Waiting for Mutex.
+Thread id: 25 CrossToB Passed Mutex.
+Thread id: 25 CrossToB signaling a waiting CrossToA.
+Thread id: 74 CrossToB crossed- Waiting for Mutex.
+Thread id: 73 CrossToB was waiting, now im signaled.
+Thread id: 73 CrossToB is going to cross.
+Thread id: 73 CrossToB Signaling Mutex.
+Thread id: 73 CrossToB is crossing the rope.
+Thread id: 20 CrossToB Passed Mutex.
+Thread id: 20 CrossToB signaling a waiting CrossToA.
+Thread id: 72 CrossToB was waiting, now im signaled.
+Thread id: 72 CrossToB is going to cross.
+Thread id: 72 CrossToB Signaling Mutex.
+Thread id: 72 CrossToB is crossing the rope.
+Thread id: 73 CrossToB crossed- Waiting for Mutex.
+Thread id: 73 CrossToB Passed Mutex.
+Thread id: 73 CrossToB signaling a waiting CrossToA.
+Thread id: 70 CrossToB was waiting, now im signaled.
+Thread id: 70 CrossToB is going to cross.
+Thread id: 70 CrossToB Signaling Mutex.
+Thread id: 70 CrossToB is crossing the rope.
+Thread id: 72 CrossToB crossed- Waiting for Mutex.
+Thread id: 72 CrossToB Passed Mutex.
+Thread id: 72 CrossToB signaling a waiting CrossToA.
+Thread id: 26 CrossToB was waiting, now im signaled.
+Thread id: 26 CrossToB is going to cross.
+Thread id: 26 CrossToB Signaling Mutex.
+Thread id: 26 CrossToB is crossing the rope.
+Thread id: 70 CrossToB crossed- Waiting for Mutex.
+Thread id: 70 CrossToB Passed Mutex.
+Thread id: 70 CrossToB Signaling Mutex.
+Thread id: 74 CrossToB Passed Mutex.
+Thread id: 74 CrossToB Signaling Mutex.
+Thread id: 26 CrossToB crossed- Waiting for Mutex.
+Thread id: 26 CrossToB Passed Mutex.
+Thread id: 26 CrossToB Signaling Mutex.
+Thread id: 24 CrossToB Passed Mutex.
+Thread id: 24 CrossToB changing direction to DirToA.
+Thread id: 24 CrossToB signaling a waiting CrossToA.
+Thread id: 55 CrossToA was waiting, now im signaled.
+Thread id: 55 CrossToA is going to cross.
+Thread id: 55 CrossToA Signalling thread behind me.
+Thread id: 55 CrossToA is crossing the rope.
+Thread id: 55 CrossToA crossed- Waiting for Mutex.
+Thread id: 58 CrossToA was waiting, now im signaled.
+Thread id: 58 CrossToA is going to cross.
+Thread id: 58 CrossToA Signalling thread behind me.
+Thread id: 58 CrossToA is crossing the rope.
+Thread id: 58 CrossToA crossed- Waiting for Mutex.
+Thread id: 60 CrossToA was waiting, now im signaled.
+Thread id: 60 CrossToA is going to cross.
+Thread id: 60 CrossToA Signalling thread behind me.
+Thread id: 60 CrossToA is crossing the rope.
+Thread id: 60 CrossToA crossed- Waiting for Mutex.
+Thread id: 62 CrossToA was waiting, now im signaled.
+Thread id: 62 CrossToA is going to cross.
+Thread id: 62 CrossToA Signaling Mutex.
+Thread id: 62 CrossToA is crossing the rope.
+Thread id: 62 CrossToA crossed- Waiting for Mutex.
+Thread id: 62 CrossToA Passed Mutex.
+Thread id: 62 CrossToA signaling a waiting CrossToA.
+Thread id: 63 CrossToA was waiting, now im signaled.
+Thread id: 63 CrossToA is going to cross.
+Thread id: 63 CrossToA Signaling Mutex.
+Thread id: 63 CrossToA is crossing the rope.
+Thread id: 63 CrossToA crossed- Waiting for Mutex.
+Thread id: 63 CrossToA Passed Mutex.
+Thread id: 63 CrossToA signaling a waiting CrossToA.
+Thread id: 64 CrossToA was waiting, now im signaled.
+Thread id: 64 CrossToA is going to cross.
+Thread id: 64 CrossToA Signaling Mutex.
+Thread id: 64 CrossToA is crossing the rope.
+Thread id: 64 CrossToA crossed- Waiting for Mutex.
+Thread id: 64 CrossToA Passed Mutex.
+Thread id: 64 CrossToA signaling a waiting CrossToA.
+Thread id: 30 CrossToA was waiting, now im signaled.
+Thread id: 30 CrossToA is going to cross.
+Thread id: 30 CrossToA Signaling Mutex.
+Thread id: 60 CrossToA Passed Mutex.
+Thread id: 60 CrossToA signaling a waiting CrossToA.
+Thread id: 30 CrossToA is crossing the rope.
+Thread id: 30 CrossToA crossed- Waiting for Mutex.
+Thread id: 31 CrossToA was waiting, now im signaled.
+Thread id: 31 CrossToA is going to cross.
+Thread id: 31 CrossToA Signaling Mutex.
+Thread id: 58 CrossToA Passed Mutex.
+Thread id: 58 CrossToA signaling a waiting CrossToA.
+Thread id: 33 CrossToA was waiting, now im signaled.
+Thread id: 33 CrossToA is going to cross.
+Thread id: 33 CrossToA Signaling Mutex.
+Thread id: 55 CrossToA Passed Mutex.
+Thread id: 55 CrossToA signaling a waiting CrossToA.
+Thread id: 31 CrossToA is crossing the rope.
+Thread id: 31 CrossToA crossed- Waiting for Mutex.
+Thread id: 34 CrossToA was waiting, now im signaled.
+Thread id: 34 CrossToA is going to cross.
+Thread id: 34 CrossToA Signaling Mutex.
+Thread id: 34 CrossToA is crossing the rope.
+Thread id: 34 CrossToA crossed- Waiting for Mutex.
+Thread id: 34 CrossToA Passed Mutex.
+Thread id: 34 CrossToA Signaling Mutex.
+Thread id: 33 CrossToA is crossing the rope.
+Thread id: 33 CrossToA crossed- Waiting for Mutex.
+Thread id: 33 CrossToA Passed Mutex.
+Thread id: 33 CrossToA Signaling Mutex.
+Thread id: 30 CrossToA Passed Mutex.
+Thread id: 30 CrossToA Signaling Mutex.
+Thread id: 31 CrossToA Passed Mutex.
+Thread id: 31 CrossToA changing direction to DirToB.
+Thread id: 31 CrossToA signaling a waiting CrossToB.
+Thread id: 18 CrossToB was waiting, now im signaled.
+Thread id: 18 CrossToB is going to cross.
+Thread id: 18 CrossToB Signalling thread behind me.
+Thread id: 18 CrossToB is crossing the rope.
+Thread id: 18 CrossToB crossed- Waiting for Mutex.
+Thread id: 45 CrossToB was waiting, now im signaled.
+Thread id: 45 CrossToB is going to cross.
+Thread id: 45 CrossToB Signalling thread behind me.
+Thread id: 45 CrossToB is crossing the rope.
+Thread id: 45 CrossToB crossed- Waiting for Mutex.
+Thread id: 47 CrossToB was waiting, now im signaled.
+Thread id: 47 CrossToB is going to cross.
+Thread id: 47 CrossToB Signalling thread behind me.
+Thread id: 47 CrossToB is crossing the rope.
+Thread id: 47 CrossToB crossed- Waiting for Mutex.
+Thread id: 49 CrossToB was waiting, now im signaled.
+Thread id: 49 CrossToB is going to cross.
+Thread id: 49 CrossToB Signaling Mutex.
+Thread id: 49 CrossToB is crossing the rope.
+Thread id: 49 CrossToB crossed- Waiting for Mutex.
+Thread id: 49 CrossToB Passed Mutex.
+Thread id: 49 CrossToB signaling a waiting CrossToA.
+Thread id: 51 CrossToB was waiting, now im signaled.
+Thread id: 51 CrossToB is going to cross.
+Thread id: 51 CrossToB Signaling Mutex.
+Thread id: 51 CrossToB is crossing the rope.
+Thread id: 51 CrossToB crossed- Waiting for Mutex.
+Thread id: 51 CrossToB Passed Mutex.
+Thread id: 51 CrossToB signaling a waiting CrossToA.
+Thread id: 56 CrossToB was waiting, now im signaled.
+Thread id: 56 CrossToB is going to cross.
+Thread id: 56 CrossToB Signaling Mutex.
+Thread id: 56 CrossToB is crossing the rope.
+Thread id: 56 CrossToB crossed- Waiting for Mutex.
+Thread id: 56 CrossToB Passed Mutex.
+Thread id: 56 CrossToB signaling a waiting CrossToA.
+Thread id: 57 CrossToB was waiting, now im signaled.
+Thread id: 57 CrossToB is going to cross.
+Thread id: 57 CrossToB Signaling Mutex.
+Thread id: 57 CrossToB is crossing the rope.
+Thread id: 57 CrossToB crossed- Waiting for Mutex.
+Thread id: 57 CrossToB Passed Mutex.
+Thread id: 57 CrossToB signaling a waiting CrossToA.
+Thread id: 59 CrossToB was waiting, now im signaled.
+Thread id: 59 CrossToB is going to cross.
+Thread id: 59 CrossToB Signaling Mutex.
+Thread id: 59 CrossToB is crossing the rope.
+Thread id: 59 CrossToB crossed- Waiting for Mutex.
+Thread id: 59 CrossToB Passed Mutex.
+Thread id: 59 CrossToB signaling a waiting CrossToA.
+Thread id: 61 CrossToB was waiting, now im signaled.
+Thread id: 61 CrossToB is going to cross.
+Thread id: 61 CrossToB Signaling Mutex.
+Thread id: 61 CrossToB is crossing the rope.
+Thread id: 61 CrossToB crossed- Waiting for Mutex.
+Thread id: 61 CrossToB Passed Mutex.
+Thread id: 61 CrossToB signaling a waiting CrossToA.
+Thread id: 65 CrossToB was waiting, now im signaled.
+Thread id: 65 CrossToB is going to cross.
+Thread id: 65 CrossToB Signaling Mutex.
+Thread id: 65 CrossToB is crossing the rope.
+Thread id: 65 CrossToB crossed- Waiting for Mutex.
+Thread id: 65 CrossToB Passed Mutex.
+Thread id: 65 CrossToB Signaling Mutex.
+Thread id: 47 CrossToB Passed Mutex.
+Thread id: 47 CrossToB Signaling Mutex.
+Thread id: 45 CrossToB Passed Mutex.
+Thread id: 45 CrossToB Signaling Mutex.
+Thread id: 18 CrossToB Passed Mutex.
+Thread id: 18 CrossToB changing direction to DirToA.
+Thread id: 18 CrossToB signaling a waiting CrossToA.
+Thread id: 41 CrossToA was waiting, now im signaled.
+Thread id: 41 CrossToA is going to cross.
+Thread id: 41 CrossToA Signalling thread behind me.
+Thread id: 41 CrossToA is crossing the rope.
+Thread id: 41 CrossToA crossed- Waiting for Mutex.
+Thread id: 36 CrossToA was waiting, now im signaled.
+Thread id: 36 CrossToA is going to cross.
+Thread id: 36 CrossToA Signalling thread behind me.
+Thread id: 36 CrossToA is crossing the rope.
+Thread id: 36 CrossToA crossed- Waiting for Mutex.
+Thread id: 42 CrossToA was waiting, now im signaled.
+Thread id: 42 CrossToA is going to cross.
+Thread id: 42 CrossToA Signalling thread behind me.
+Thread id: 42 CrossToA is crossing the rope.
+Thread id: 42 CrossToA crossed- Waiting for Mutex.
+Thread id: 37 CrossToA was waiting, now im signaled.
+Thread id: 37 CrossToA is going to cross.
+Thread id: 37 CrossToA Signaling Mutex.
+Thread id: 37 CrossToA is crossing the rope.
+Thread id: 41 CrossToA Passed Mutex.
+Thread id: 41 CrossToA signaling a waiting CrossToA.
+Thread id: 43 CrossToA was waiting, now im signaled.
+Thread id: 43 CrossToA is going to cross.
+Thread id: 43 CrossToA Signaling Mutex.
+Thread id: 43 CrossToA is crossing the rope.
+Thread id: 37 CrossToA crossed- Waiting for Mutex.
+Thread id: 37 CrossToA Passed Mutex.
+Thread id: 37 CrossToA signaling a waiting CrossToA.
+Thread id: 38 CrossToA was waiting, now im signaled.
+Thread id: 38 CrossToA is going to cross.
+Thread id: 38 CrossToA Signaling Mutex.
+Thread id: 38 CrossToA is crossing the rope.
+Thread id: 43 CrossToA crossed- Waiting for Mutex.
+Thread id: 43 CrossToA Passed Mutex.
+Thread id: 43 CrossToA signaling a waiting CrossToA.
+Thread id: 44 CrossToA was waiting, now im signaled.
+Thread id: 44 CrossToA is going to cross.
+Thread id: 44 CrossToA Signaling Mutex.
+Thread id: 44 CrossToA is crossing the rope.
+Thread id: 38 CrossToA crossed- Waiting for Mutex.
+Thread id: 38 CrossToA Passed Mutex.
+Thread id: 38 CrossToA signaling a waiting CrossToA.
+Thread id: 39 CrossToA was waiting, now im signaled.
+Thread id: 39 CrossToA is going to cross.
+Thread id: 39 CrossToA Signaling Mutex.
+Thread id: 39 CrossToA is crossing the rope.
+Thread id: 44 CrossToA crossed- Waiting for Mutex.
+Thread id: 44 CrossToA Passed Mutex.
+Thread id: 44 CrossToA signaling a waiting CrossToA.
+Thread id: 40 CrossToA was waiting, now im signaled.
+Thread id: 40 CrossToA is going to cross.
+Thread id: 40 CrossToA Signaling Mutex.
+Thread id: 40 CrossToA is crossing the rope.
+Thread id: 39 CrossToA crossed- Waiting for Mutex.
+Thread id: 39 CrossToA Passed Mutex.
+Thread id: 39 CrossToA Signaling Mutex.
+Thread id: 42 CrossToA Passed Mutex.
+Thread id: 42 CrossToA Signaling Mutex.
+Thread id: 40 CrossToA crossed- Waiting for Mutex.
+Thread id: 40 CrossToA Passed Mutex.
+Thread id: 40 CrossToA Signaling Mutex.
+Thread id: 36 CrossToA Passed Mutex.
+Thread id: 36 CrossToA changing direction to DirToB.
+Thread id: 36 CrossToA signaling a waiting CrossToB.
+Thread id: 66 CrossToB was waiting, now im signaled.
+Thread id: 66 CrossToB is going to cross.
+Thread id: 66 CrossToB Signalling thread behind me.
+Thread id: 66 CrossToB is crossing the rope.
+Thread id: 66 CrossToB crossed- Waiting for Mutex.
+Thread id: 67 CrossToB was waiting, now im signaled.
+Thread id: 67 CrossToB is going to cross.
+Thread id: 67 CrossToB Signalling thread behind me.
+Thread id: 67 CrossToB is crossing the rope.
+Thread id: 67 CrossToB crossed- Waiting for Mutex.
+Thread id: 27 CrossToB was waiting, now im signaled.
+Thread id: 27 CrossToB is going to cross.
+Thread id: 27 CrossToB Signalling thread behind me.
+Thread id: 27 CrossToB is crossing the rope.
+Thread id: 27 CrossToB crossed- Waiting for Mutex.
+Thread id: 68 CrossToB was waiting, now im signaled.
+Thread id: 68 CrossToB is going to cross.
+Thread id: 68 CrossToB Signaling Mutex.
+Thread id: 68 CrossToB is crossing the rope.
+Thread id: 68 CrossToB crossed- Waiting for Mutex.
+Thread id: 68 CrossToB Passed Mutex.
+Thread id: 68 CrossToB signaling a waiting CrossToA.
+Thread id: 32 CrossToB was waiting, now im signaled.
+Thread id: 32 CrossToB is going to cross.
+Thread id: 32 CrossToB Signaling Mutex.
+Thread id: 67 CrossToB Passed Mutex.
+Thread id: 67 CrossToB signaling a waiting CrossToA.
+Thread id: 35 CrossToB was waiting, now im signaled.
+Thread id: 35 CrossToB is going to cross.
+Thread id: 35 CrossToB Signaling Mutex.
+Thread id: 27 CrossToB Passed Mutex.
+Thread id: 27 CrossToB Signaling Mutex.
+Thread id: 66 CrossToB Passed Mutex.
+Thread id: 66 CrossToB Signaling Mutex.
+Thread id: 32 CrossToB is crossing the rope.
+Thread id: 32 CrossToB crossed- Waiting for Mutex.
+Thread id: 32 CrossToB Passed Mutex.
+Thread id: 32 CrossToB Signaling Mutex.
+Thread id: 35 CrossToB is crossing the rope.
+Thread id: 35 CrossToB crossed- Waiting for Mutex.
+Thread id: 35 CrossToB Passed Mutex.
+Thread id: 35 CrossToB setting direction to none.
+Thread id: 35 CrossToB Signaling Mutex.
+Baboons have crossed without killing each other. Great Success!

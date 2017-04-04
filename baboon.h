@@ -19,5 +19,4 @@ extern const unsigned int RAND_RANGE;
 
 typedef struct _thread_data_t {
 	int tid;//thread id
-	int amount;//amount to deposit or withdraw
 } thread_data_t;

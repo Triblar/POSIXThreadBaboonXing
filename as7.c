@@ -36,11 +36,11 @@ int xingCount = 0;
 int xedCount = 0;
 int toBWaitCount = 0;
 int toAWaitCount = 0;
-enum {None, DirToB, DirToA} xingDirection;
-xingDirection = None;
+typedef enum {None, DirToB, DirToA} crossDirection;
+crossDirection xingDirection = None;
 sem_t a, b, mutex; // a is cross to A semaphore, b is cross to B semaphore
 time_t t;
-char debug = 0;//used to debug
+char debug = 1;//used to debug
 
 int getRand();//returns a random int
 void *crossToA(void *arg);//thread function for crossing to A
@@ -126,8 +126,8 @@ void *crossToA(void *arg) {
 	stall(CROSS_ROPE_STALL_TIME);
 
 	printf("Thread id: %d CrossToA crossed- Waiting for Mutex.\n", data->tid);
-	semwait(&mutex)
-	printf("Thread id: %d CrossToA Passed Mutex.\n", data->pid);
+	semwait(&mutex);
+	printf("Thread id: %d CrossToA Passed Mutex.\n", data->tid);
 	xedCount++;
 	xingCount--;
 
@@ -212,8 +212,8 @@ void *crossToB(void *arg) {
 	stall(CROSS_ROPE_STALL_TIME);
 
 	printf("Thread id: %d CrossToB crossed- Waiting for Mutex.\n", data->tid);
-	semwait(&mutex)
-	printf("Thread id: %d CrossToB Passed Mutex.\n", data->pid);
+	semwait(&mutex);
+	printf("Thread id: %d CrossToB Passed Mutex.\n", data->tid);
 	xedCount++;
 	xingCount--;
 

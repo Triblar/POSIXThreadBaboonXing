@@ -15,6 +15,8 @@
 #define NUM_THREADS 200
 #endif
 
+#define CROSS_ROPE_STALL_TIME	100000
+
 extern const unsigned int RAND_RANGE;
 
 typedef struct _thread_data_t {

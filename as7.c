@@ -16,7 +16,7 @@ int toBWaitCount = 0;
 int toAWaitCount = 0;
 enum {None, DirToB, DirToA} xingDirection;
 xingDirection = None;
-sem_t a, b, mutex;
+sem_t a, b, mutex; // a is cross to A semaphore, b is to b semaphore
 time_t t;
 char debug = 0;//used to debug
 
@@ -28,6 +28,14 @@ void semsignal(sem_t *sem);//error-checked semaphore signal
 
 int getRand() {
 	return ((rand() % RAND_RANGE) - RAND_RANGE/2);
+}
+
+// Stall function for crossing Rope
+void stall(int iterations){
+	int i;
+	for(i = 0; i < iterations; i++){
+		;
+	}
 }
 
 // Error checked semaphore wait function
@@ -49,7 +57,6 @@ void semsignal(sem_t *sem) {
 void *crossToA(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
 	printf("Thread id: %d CrossToA Waiting on Mutex.\n", data->tid);
-	fflush(stdout);
 	semwait(&mutex);
 	printf("Thread id: %d CrossToA Passed Mutex.\n", data->tid);
 
@@ -61,6 +68,57 @@ void *crossToA(void *arg) {
 		xingDirection = DirToA;
 		xingCount++;
 		printf("Thread id: %d CrossToA Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
+	}
+	else
+	{
+		printf("Thread id: %d CrossToA is waiting.\n", data->tid);
+		toAWaitCount++;
+		printf("Thread id: %d CrosstoA Signaling Mutex.\n", data->tid);
+		semsignal(&mutex);
+		semwait(&a);
+		printf("Thread id: %d CrossToA was waiting, now im signaled.\n", data->tid);
+		toAWaitCount--;
+		xingCount++;
+		xingDirection = DirToA;
+
+		// *** Baboons check to see if anyone is waiting behind them, and signal those behind them
+		// *** This is necessary because otherwise only one baboon would be on the rope at a time. Symmetrical with logic in crossToB
+		if(toAWaitCount > 0 && xingCount < 4 && (xedCount + xingCount < 10 || toBWaitCount == 0))
+		{
+			printf("Thread id: %d CrossToA is going to cross.\n", data->tid);
+			printf("Thread id: %d CrossToA Signalling thread behind me.\n", data->tid);
+			semsignal(&a);
+		}
+		else
+		{
+			printf("Thread id: %d CrossToA is going to cross.\n", data->tid);
+			printf("Thread id: %d CrossToA Signaling Mutex.\n", data->tid);
+			semsignal(&mutex);
+		}
+	}
+
+	printf("Thread id: %d CrossToA is crossing the rope.\n", data->tid);
+	// Time to cross rope
+	stall(CROSS_ROPE_STALL_TIME);
+
+	printf("Thread id: %d CrossToA crossed- Waiting for Mutex.\n", data->tid);
+	semwait(&mutex)
+	printf("Thread id: %d CrossToA Passed Mutex.\n", data->pid);
+	xedCount++;
+	xingCount--;
+
+	if(toAWaitCount != 0 && (xingCount + xedCount < 10 || toBWaitCount == 0))
+	{
+		printf("Thread id: %d CrossToA signaling a waiting CrossToA.\n", data->tid);
+		semsignal(&a);
+	}
+	else if ()
+	{
+
+	}
+	else if()
+	{
 
 	}
 	else
@@ -68,33 +126,14 @@ void *crossToA(void *arg) {
 
 	}
 
+	fflush(stdout);
 	pthread_exit(NULL);
 }
 
 void *crossToB(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
 	semwait(&mutex);
-	balance = balance + data->amount;
-	fflush(stdout);
-	printf("Thread %d deposits %d\tbalance: %d, ", data->tid, data->amount, balance);
-	if (needed > 0) {
-		if (data->amount >= needed) {
-			needed = 0;
-			printf("needed: 0\n");
-			printf("Thread %d releases ", data->tid);
-			fflush(stdout);
-			semsignal(&a);
-		} else {
-			needed = needed - data->amount;
-			printf("needed: %d\n\n", needed);
-			fflush(stdout);
-			semsignal(&mutex);
-		}
-	} else {
-		printf("needed: 0\n\n");
-		fflush(stdout);
-		semsignal(&mutex);
-	}
+
 	pthread_exit(NULL);
 }
 

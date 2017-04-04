@@ -23,6 +23,8 @@
  #endif
 
  #define CROSS_ROPE_STALL_TIME	100000
+ // The amount of loop iterations to stall between making baboons
+ #define BABOON_CREATE_STALL_TIME	7000
 
  extern const unsigned int RAND_RANGE;
 
@@ -249,25 +251,26 @@ void *crossToB(void *arg) {
 	fflush(stdout);
 	pthread_exit(NULL);
 }
-
+/* Main function. From command line call ./as7.o aabbbbaaabbbababaaaabbbaababa
+* This call is case insenstivie and for each a or b will create a thread having
+* a baboon cross to a and b respectively
+*/
 int main(int argc, char const *argv[])
 {
 	pthread_t threads[NUM_THREADS];
 	thread_data_t thread_data[NUM_THREADS];
 	int errorCheck;//used to error check thread creation
-
-	//seed the random number generator
-	srand((unsigned int)time(&t));
-
 	//initialize semaphores
 	if (sem_init(&mutex, 0, (unsigned int)1) < 0
 		|| sem_init(&a, 0, (unsigned int)0) < 0
-		|| sem_init(&b, 0, (unsigned int)0) < 0) {
+		|| sem_init(&b, 0, (unsigned int)0) < 0)
+    {
 		perror("sem_init");
 		exit(EXIT_FAILURE);
 	}
 
-	if (debug) {
+	if (debug)
+    {
 		/*
 		* debug mode:
 		* Create baboon crossing to A
@@ -286,72 +289,40 @@ int main(int argc, char const *argv[])
 		pthread_join(threads[0], NULL);
 		pthread_join(threads[1], NULL);
 		pthread_join(threads[2], NULL);
-	} /* else {
-		for (int i = 0; i < NUM_THREADS; ++i) {
-
-			void *thread_func;//the function to call
-
-			thread_data[i].tid = i;//set thread id to current i value
-
-			if ((thread_data[i].amount = getRand()) < 0) {//if random amount < 0
-				thread_data[i].amount = -(thread_data[i].amount);//negate it
-				thread_func = withdraw;//make this a withdrawal
-			} else {//else amount > 0
-				thread_func = deposit;//make this a deposit
-			}
-			if ((errorCheck = pthread_create(&threads[i], NULL, thread_func, &thread_data[i]))) {
-				fprintf(stderr, "error: pthread_create, %d\n", errorCheck);
-				return EXIT_FAILURE;
-			}
-		}
-
-		/*	make a large final deposit to ensure that any waiting withdrawal threads finish
-		*
-		*	example:
-		*
-		*	4 threads:
-		*
-		*	1. withdraw 100
-		*	2. withdraw 100
-		*	3. withdraw 100
-		*	4. deposit  200
-		*
-		*	final thread: deposit 1,000,000 ... ensures thread 3 finishes
-
-
-		sleep(1);
-		printf("...............FINAL THREAD (%d) COMING.............", NUM_THREADS+1);
-		fflush(stdout);
-		sleep(1);
-		printf(".");
-		fflush(stdout);
-		sleep(1);
-		printf(".");
-		fflush(stdout);
-		sleep(1);
-		printf(".");
-		fflush(stdout);
-		sleep(1);
-		printf("\n");
-		fflush(stdout);
-		pthread_t finalThread;
-		thread_data_t ftd = { NUM_THREADS + 1, RAND_MAX/2};//final thread data
-		if ((errorCheck = pthread_create(&finalThread, NULL, deposit, &ftd))) {
-			fprintf(stderr, "error: pthread_create, %d\n", errorCheck);
-				return EXIT_FAILURE;
-		}
-
-		for (int i = 0; i < NUM_THREADS; ++i) {
-			if ((errorCheck = pthread_join(threads[i], NULL))) {
-				fprintf(stderr, "error: pthread_join, %d\n", errorCheck);
-			}
-		}
-
-		if ((errorCheck = pthread_join(finalThread, NULL))) {
-			fprintf(stderr, "error: pthread_join, %d\n", errorCheck);
-		}
 	}
-	*/
+    else
+    {
+        int i = 0;
+        while(argv[1][i] != 0)
+        {
+			thread_data[i].tid = i;//set thread id to current i value
+            switch (argv[1][i]) {
+    			case 'a':
+    			case 'A':
+                    pthread_create(&threads[i], NULL, crossToA, &thread_data[i]);
+    				break;
 
-	return EXIT_SUCCESS;
+    			case 'b':
+    			case 'B':
+    				pthread_create(&threads[i], NULL,  crossToB, &thread_data[i]);
+    				break;
+
+    			default:
+    				printf("!!!Invalid argument!!!\n");
+    				exit(EXIT_FAILURE);
+    				break;
+
+    		}
+            // Stall between each baboon creation (stall length is a bit less than the time it takes to cross the rope)
+            stall(BABOON_CREATE_STALL_TIME);
+            i++;
+		}
+        // Join all threads
+        for(int j = 0; j < i; j++)
+        {
+            pthread_join(threads[j], NULL);
+        }
+	    return EXIT_SUCCESS;
+    }
+
 }
